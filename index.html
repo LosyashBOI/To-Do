@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="to-do">
+        <p class="to-do__priority">HIGH</p>
+        <form onsubmit="return false" class="to-do__form to-do__form_high">
+            <input id="form-high" class="form__input" type="text" placeholder="Добавить важных дел">
+            <input class="form__input-btn" value="" type="submit">
+        </form>
+        <ul class="to-do__list to-do__list_high">
+            <li class="to-do__list-item flex">
+                <button class="checkbox-btn"></button>
+                <p class="to-do__task-descr">
+                    Вот вам и супер интересная тема. <br>
+                    Вы наверняка заметили что ваши файлы с кодом становятся все объемнее, что хочется вынести некоторые вещи куда-то за пределы основной программы.
+                </p>
+                <button class="del-task-btn"></button>
+            </li>
+            <li class="to-do__list-item flex">
+                <button class="checkbox-btn"></button>
+                <p class="to-do__task-descr">
+                    Сверстать этот TODO list
+                </p>
+                <button class="del-task-btn"></button>
+            </li>
+            <li class="to-do__list-item to-do__list-item_done flex">
+                <button class="checkbox-btn checkbox-btn_done"></button>
+                <p class="to-do__task-descr">
+                    Начать делать задачу
+                </p>
+                <button class="del-task-btn"></button>
+            </li>
+        </ul>
+        <p class="to-do__priority">LOW</p>
+        <form onsubmit="return false" class="to-do__form to-do__form_low">
+            <input id="form-low" class="form__input" type="text" placeholder="Добавить важных дел">
+            <input class="form__input-btn" value="" type="submit">
+        </form>
+        <ul class="to-do__list to-do__list_low">
+            <li class="to-do__list-item flex">
+                <button class="checkbox-btn"></button>
+                <p class="to-do__task-descr">
+                    Посмотреть ютубчик
+                </p>
+                <button class="del-task-btn"></button>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
