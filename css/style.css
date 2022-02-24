@@ -72,19 +72,19 @@ body {
     width: 21px;
     height: 21px;
     margin-right: 12px;
-    background-image: url('./img/checkbox-disabled.svg');
+    background-image: url('../img/checkbox-disabled.svg');
     background-repeat: no-repeat;
 }
 
 .checkbox-btn_done {
-    background-image: url('./img/checkbox-enabled.svg');
+    background-image: url('../img/checkbox-enabled.svg');
 }
 
 .del-task-btn {
     width: 20px;
     height: 20px;
     right: 10px;
-    background-image: url('./img/close-icon.svg');
+    background-image: url('../img/close-icon.svg');
 }
 
 .to-do__task-descr {
